@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Guess the number</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+	<header>
+		<div class="top">
+			<div class="button">Start over!</div>
+			<div class="range">( between <span class="min"></span> and <span class="max"></span> )</div>
+		</div>
+		<h1>Guess the number!!!</h1>
+		<div class="question">???</div>
+	</header>
+	<main>
+		<section class="left">
+			<input type="number">
+			<div class="button">Check it!</div>
+		</section>
+		<section class="right">
+			<p class="answer">Let's begin to guessing!</p>
+			<p class="score">Score: <span></span></p>
+			<p class="best">Best result: <span>0</span></p>
+		</section>
+	</main>
+	<button class="settings_s">Settings(S)</button>
+	<div class="settings hidden">
+		<div class="close">&#9746;</div>
+		<h2>Settings:</h2>
+		<div class="param">
+			<div class="param__min">min = <input type="number"></div>
+			<div class="param__max">max = <input type="number"></div>
+			<div class="param__score">score = <input type="number"></div>
+		</div>
+		<div class="settings__button">
+			<button class="settings__btn save">Save change</button>
+			<button class="settings__btn cancel">Сancel</button>
+		</div>
+	</div>
+	<div class="back hidden"></div>
+	<script src="js/script.js"></script>
+</body>
+</html>
